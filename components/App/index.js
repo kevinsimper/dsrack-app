@@ -19,7 +19,7 @@ export default class App extends React.Component {
       <div>
         <AppBar title="DS RACK"/>
         <div className={styles.Main}>
-          <Games/>
+          {this.props.children}
         </div>
       </div>
     )

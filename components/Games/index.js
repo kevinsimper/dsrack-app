@@ -8,7 +8,7 @@ export default class Games extends React.Component {
     return (
       <div>
         <div className={styles.Gameslist}>
-          {data.games.map(item => <Game item={item}/>)}
+          {data.games.map((item, key) => <Game key={key} item={item}/>)}
         </div>
       </div>
     )
