@@ -18,6 +18,10 @@ module.exports = {
         }
       },
       {
+        test: /\.json/,
+        loaders: ['json']
+      },
+      {
         test: /\.s?css$/,
         loaders: ['style-loader', 'css?modules', 'autoprefixer', 'sass']
       }
